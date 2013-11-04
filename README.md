@@ -1,4 +1,4 @@
 pelican-orodor
 ==============
 
-pelican theme for orodor.org.uk
+* 2013-11-04 - started from scratch
