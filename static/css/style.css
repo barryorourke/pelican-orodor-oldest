@@ -1,0 +1,137 @@
+body {
+  background-color:  #fbfae8;
+  font-family:       "Ubuntu", sans-serif;
+  color:             #444;
+}
+
+a {
+  color:             #346199;
+}
+
+h3 {
+  letter-spacing:    3px;
+  font-family:       "Lobster", Verdana, serif;
+  font-weight:       normal;
+  color:             #7a645c;
+}
+
+h3 a {
+  color:             #7a645c;
+}
+
+h3 a:hover {
+  text-decoration:   none;
+  color:             #7a645c;
+}
+
+blockquote {
+  border:            0;
+}
+
+blockquote p {
+  font-style:        italic; 
+  font-size:         1em;
+  margin:            1em 3em;
+  color:             #555;
+}
+
+footer {
+  border-top:        3px solid #7a645c;
+}
+
+.navbar-default {
+  background:        #fbfae8;
+  margin-bottom:     0;
+  border:            0;
+  border-radius:     0;
+  border-bottom:     3px solid #7a645c;
+  border-top:        5px solid #7a645c;
+}
+
+.navbar-default .navbar-brand {
+  letter-spacing:    3px;
+  font-family:       "Lobster", sans-serif;
+  font-weight:       normal;
+  font-size:         3em;
+  color:             #7a645c;
+}
+
+.navbar-default .navbar-nav .active a {
+  font-weight:       bold;
+}
+
+.mainpage {
+  background-color:  #fff;
+  border-right:      1px solid #eee;
+  border-left:       1px solid #eee;
+  padding:           2em 0;
+}
+
+article {
+  margin-bottom:     1.75em;
+}
+
+article h3 {
+  border-bottom:     1px solid #eaeaea;
+  margin:            0;
+}
+
+article .container {
+  padding:           0;
+}
+
+article .postmeta {
+  font-style:        italic;
+  font-size:         0.85em;
+  margin:            0.25em;
+}
+
+article .postbody {
+  padding:           0.5em 0;
+}
+
+article .pagebody {
+  padding:           1em 0;
+}
+
+.well {
+  background-color:  #f5f6f3; 
+  padding:           0;
+}
+
+aside {
+  margin:            1em 0 2em 0;
+}
+
+aside ul,
+aside h3 {
+  text-align:        center;
+}
+
+.fa {
+  color:             #7a645c;
+}
+
+.tag-1 {
+  font-size:        1.1em;
+}
+
+.tag-2 {
+  font-size:        1em;
+}
+
+.tag-3 {
+  font-size:        0.9em;
+}
+
+.tag-4 {
+  font-size:        0.8em;
+}
+
+.social {
+  margin:           0 0 1.5em 0;
+}
+
+article img {
+  border:           1px solid #eaeaea;
+}
