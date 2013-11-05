@@ -34,6 +34,11 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
   <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="{{ SITEURL }}/theme/js/html5shiv.js"></script>
+    <script src="{{ SITEURL }}/theme/js/respond.js"></script>
+  <![endif]-->
   {% endblock head %}
 </head>
 
@@ -107,6 +112,10 @@
 
     <footer class="text-center">{{ SITE_FOOTER }}</footer>
 
+    {% block foot %}
+    <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+    {% endblock %}
   </div>
 </body>
 </html>
