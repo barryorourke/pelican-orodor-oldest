@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+        <article>
+          <h3>{{ article.title }}</h3>
+          <div class="container postmeta">
+            <span><i class="fa fa-calendar"></i> {{ article.date| strftime('%A, %B %d, %Y') }}</span>
+            <span class="pull-right"><i class="fa fa-tags"></i>
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </span>
+          </div>
+          <div class="container postbody">
+            {{ article.content }}
+          </div>
+        </article>
+{% endblock %}

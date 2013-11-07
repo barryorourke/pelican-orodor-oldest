@@ -79,10 +79,10 @@
         <aside class="block social text-center">
           <ul class="list-inline">
           {% if FEED_ATOM %}
-            <li><a href="{{ SITEURL }}/{{ FEED_ATOM }}"><i class="fa fa-rss fa-2x"></i></a></li>
+            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}"><i class="fa fa-rss fa-2x"></i></a></li>
           {% endif %}
           {% if FEED_RSS %}
-            <li><a href="{{ SITEURL }}/{{ FEED_RSS }}"><i class="fa fa-rss fa-2x"></i></a></li>
+            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}"><i class="fa fa-rss fa-2x"></i></a></li>
           {% endif %}
           {% if EMAIL %}
             <li><a href="mailto:{{ EMAIL }}"><i class="fa fa-envelope fa-2x"></i></a></li>
