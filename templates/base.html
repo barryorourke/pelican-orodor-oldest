@@ -28,8 +28,7 @@
   {% if TAG_FEED_RSS and tag %}
   <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
   {% endif %}
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
+  <link rel="stylesheet" type="text/css" href="http://openfontlibrary.org/face/architect-s-daughter" />
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
@@ -94,9 +93,15 @@
         </aside>
         {% endif %}
         <div class="well">
-        {% if tag_cloud %}
           <aside>
-            <h3><i class="fa fa-tags"></i>Tags</h3>
+            <h3><i class="fa fa-search"></i> Search</h3>
+            <form id="search" action"#" onsubmit="javascript:window.open('https://duckduckgo.com/?q='+document.getElementById('keywords').value+'+site:{{ SITEURL }}');">
+              <div class="form-group container">
+                <input type="text" class="form-control input-sm" id="keywords">
+              </div>
+            </form>
+          {% if tag_cloud %}
+            <h3><i class="fa fa-tags"></i> Tags</h3>
             <ul class="list-inline text-center tag-cloud">
             {% for tag in tag_cloud %}
               <li class="tag-{{ tag.1 }}">
@@ -104,8 +109,8 @@
               </li>
             {% endfor %}
             </ul>
-          </aside>
           {% endif %}
+          </aside>
         </div>
       </div>
     </div>
