@@ -8,11 +8,14 @@ a {
   color:             #346199;
 }
 
-h3 {
+h1, h2, h3, h4 {
   font-family:       "Architects Daughter", Verdana, sans-serif;
   font-weight:       normal;
-  font-size:         2.5em;
   color:             #7a645c;
+}
+
+h3 {
+  font-size:         2.5em;
 }
 
 h3 a {
@@ -22,6 +25,10 @@ h3 a {
 h3 a:hover {
   text-decoration:   none;
   color:             #7a645c;
+}
+
+h4 {
+  margin:            1em 0;
 }
 
 blockquote {
